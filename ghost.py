@@ -1,0 +1,86 @@
+from turtle import *
+Screen().setup(500, 650)
+Screen().bgcolor('black')
+penup()
+goto(180, -120)
+speed(0)
+pensize(5)
+
+setheading(90)
+pendown()
+fillcolor("pink")
+begin_fill()
+forward(200)
+circle(160, extent=180)  #  Draw 1/2 of the bottom/circle
+forward(200)
+circle(40, extent=180)
+forward(60)
+
+setheading(-90)
+forward(60)
+circle(40, extent=180)
+
+forward(60)
+setheading(-90)
+forward(60)
+circle(40, extent=180)
+
+forward(60)
+setheading(-90)
+forward(60)
+circle(40, extent=180)
+end_fill()
+
+# draw right eye
+penup()
+goto(120, 130)
+fillcolor("black")
+begin_fill()
+circle(30)
+end_fill()
+penup()
+#goto(120, 130)
+fillcolor("white")
+begin_fill()
+circle(10)
+end_fill()
+
+# draw left eye
+penup()
+goto(-30, 130)
+fillcolor("black")
+begin_fill()
+circle(30)
+end_fill()
+penup()
+fillcolor("white")
+begin_fill()
+circle(10)
+end_fill()
+penup()
+
+# draw left hand
+goto(-90, 0)
+setheading(-40)
+pendown()
+forward(40)
+circle(30, extent=180)
+forward(40)
+
+# draw right hand
+penup()
+goto(90, 50)
+setheading(-120)
+pendown()
+forward(40)
+circle(30, extent=180)
+forward(40)
+
+penup()
+goto(-140, -220)
+pendown()
+color('orange')
+write("Happy Halloween! ", font=("Arial", 30, "bold"))
+
+hideturtle()
+done()
